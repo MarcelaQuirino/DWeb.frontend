@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+iframe {
+    height: 377px;
+    width: 478px;
+
+
+}
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+}
+
+header {
+    background: rgb(45, 114, 141);
+    height: 90px;
+
+}
+
+a {
+color: rgb(5, 4, 46);
+
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    front-size: 30px;
+    text-decoration: none;
+    
+
+}
