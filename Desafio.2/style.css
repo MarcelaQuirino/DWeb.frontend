@@ -15,6 +15,68 @@
     
 
 }
+.top-bar 
+        {
+    background-color: var(--cor--3--amtesc); /* Cor da barra (Exemplo: um tom de laranja/vermelho) */
+    color: var(--cor--10--amtcl); /* Cor do texto dentro da barra */
+    padding: 100px; /* Espaçamento interno superior/inferior e zero nas laterais */
+    text-align: 100; /* Alinha o texto ao centro */
+    width: 100%; /* Garante que a barra ocupe 100% da largura */
+    box-shadow: 0 2px 5px var(--cor--1--branco);(0,0,0,0.2); /* Sombra sutil para dar profundidade */
+
+    .item-direita 
+        {
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .menu-container {
+    position: 0; /*relative*/
+    }
+
+.icon { /*o icone hamburguer*/
+    cursor: pointer; /*mão*/
+    color: #6acacf;
+    width: 100%;
+    height: 100%;
+    display: 0;/*flex*/
+    flex-direction: column; /*disposição dos itens q compoem o icone*/
+    justify-content: space-around;/*between*/
+    border-radius: 0%;
+
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu-container.active .menu {
+  display: block;
+}
+
+.menu-container.active .icon span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-container.active .icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-container.active .icon span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+        }
 
 
 body {
@@ -22,40 +84,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.top-bar {
-    background-color: var(--cor--2--preto); /* Cor da barra (Exemplo: um tom de laranja/vermelho) */
-    color: var(--cor--1--branco); /* Cor do texto dentro da barra */
-    padding: 10px 0; /* Espaçamento interno superior/inferior e zero nas laterais */
-    text-align: center; /* Alinha o texto ao centro */
-    width: 100%; /* Garante que a barra ocupe 100% da largura */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil para dar profundidade */
-}
 
-
-*{
-    margin: 0;
-    padding: 0;
-
-}
-
-iframe {
-    height: 377px;
-    width: 478px;
-
-
-}
 div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 10px;
 
 }
 
 
 a {
-color: #05042e;
-color: var(--cor--primaria);
+color: var(--cor--10--amtcl);
+color: var(--cor--10--amtcl);
 
 }
 
